@@ -1,4 +1,4 @@
-# CẨM NANG SỬ DỤNG CÁC APP V2RAY VÀ MAGIC V2RAY
+# Cẩm nang sử dụng các tính năng của Xray-core để tối ưu cho nhu cầu sử dụng
 
 Chào mừng bạn đến với **Magic V2Ray** – Trạm điều khiển mạng bảo mật thế hệ mới dành cho thiết bị Android của bạn. 
 
@@ -6,7 +6,7 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 
 ---
 
-## 🧭 PHẦN 1: GIẢI THÍCH CÁC TÍNH NĂNG
+## 🧭 PHẦN 1: GIẢI THÍCH CÁC TÍNH NĂNG THƯỜNG THẤY
 
 ### 1. Phân giải DNS Qua Proxy (Resolve DNS via Proxy)
 > Một số app sẽ không có tùy chọn này
