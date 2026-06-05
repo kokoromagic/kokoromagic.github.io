@@ -11,9 +11,9 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 ### 1. Phân giải DNS Qua Proxy (Resolve DNS via Proxy)
 > Một số app sẽ không có tùy chọn này
 
-* **Giải thích bình dân:** Bình thường khi bạn gõ `facebook.com`, điện thoại sẽ hỏi "nhà mạng Việt Nam" xem địa chỉ nhà Facebook ở đâu rồi mới đi. Việc này dễ bị nhà mạng chặn hoặc theo dõi. Khi bật tính năng này, điện thoại sẽ bỏ qua nhà mạng, đóng gói câu hỏi lại bảo mật rồi gửi sang máy chủ nước ngoài (VPS) nhờ hỏi hộ.
+* **Giải thích bình dân:** Bình thường khi bạn gõ `facebook.com`, điện thoại sẽ hỏi "nhà mạng Việt Nam" xem địa chỉ nhà Facebook ở đâu rồi mới đi. Việc này dễ bị nhà mạng chặn hoặc theo dõi. Khi bật tính năng này, điện thoại sẽ bỏ qua nhà mạng, đóng gói câu hỏi lại bảo mật rồi gửi sang máy chủ (VPS) nhờ hỏi hộ.
 * **Ưu điểm:** Vượt qua mọi tường lửa, chặn mạng của các nhà mạng tại Việt Nam một cách hoàn hảo. An toàn tuyệt đối.
-* **Nhược điểm:** Bạn phải tốn thêm một chút thời gian chờ máy chủ nước ngoài trả lời, nên lúc mới bấm vào trang web sẽ có cảm giác hơi "khựng" nhẹ khoảng 0.5 giây đầu.
+* **Nhược điểm:** Bạn phải tốn thêm một chút thời gian chờ máy chủ (VPS) trả lời, nên lúc mới bấm vào trang web sẽ có cảm giác hơi "khựng" nhẹ khoảng 0.5 giây đầu.
 
 ### 2. Bật Cơ Chế Fake DNS (Enable Fake DNS)
 * **Giải thích bình dân:** Đây là "liều thuốc" trị chứng bệnh "khựng 0.5 giây" ở trên. Thay vì bắt trình duyệt ngồi đợi máy chủ nước ngoài tìm địa chỉ thật, ứng dụng sẽ **bịa ngay ra một địa chỉ ảo** (Fake IP) trên bộ nhớ máy và đưa cho trình duyệt chạy luôn lập tức. Trong lúc trình duyệt đang chạy, ứng dụng sẽ âm thầm dịch ngược lại ở phía sau.
@@ -24,10 +24,10 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 
 ### 4. Ưu Tiên IPv6 (Prefer IPv6)
 * **Giải thích bình dân:** IPv6 là hệ thống đường cao tốc mới rộng hơn, thoáng hơn IPv4 cũ. Nếu máy chủ của bạn hỗ trợ, bật tính năng này sẽ ép dữ liệu di chuyển trên làn đường cao tốc mới này.
-* **Lưu ý:** Chỉ nên bật nếu mạng 4G/Wifi và máy chủ của bạn có hỗ trợ IPv6, nếu không có thể gây mất kết nối một số trang web.
+* **Lưu ý:** Chỉ nên bật nếu mạng 4G/Wifi và máy chủ (VPS) của bạn thật sự có hỗ trợ IPv6, nếu không có thể gây mất kết nối một số trang web.
 
 ### 5. Ghim Chứng Chỉ Máy Chủ (Pinned Peer Cert SHA256)
-> Các app sử dụng X-ray core cũ sẽ không có tùy chọn này
+> Tính năng này thay thế cho tính năng "allowInsecure". Các app sử dụng Xray-core cũ sẽ không có tùy chọn này
 
 * **Giải thích bình dân:** Đây là tính năng bảo mật cấp cao nhất. Bạn cấp cho ứng dụng một mã "Hộ chiếu độc quyền" của máy chủ thật. Khi bạn ra quán cafe kết nối Wifi công cộng, nếu có hacker xấu tính cố tình giả mạo địa chỉ máy chủ để ăn trộm mật khẩu của bạn, ứng dụng quét mã thấy không khớp sẽ **ngay lập tức cắt đứt kết nối** để bảo vệ bạn.
 
@@ -42,7 +42,7 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 
 ## ⚡ PHẦN 2: CÁC THIẾT LẬP TỐI ƯU SẴN (CHỈ CẦN CHỈNH THEO)
 
-Tùy thuộc vào nhu cầu hằng ngày của bạn, hãy chọn một trong các chế độ cấu hình mẫu dưới đây để điền vào phần **Traffic Settings** trên giao diện Board điều khiển:
+Tùy thuộc vào nhu cầu hằng ngày của bạn, hãy chọn một trong các chế độ cấu hình mẫu dưới đây để điền vào phần cài đặt lưu lượng của app V2Ray và Magic V2Ray:
 
 ### 🎮 Chế độ 1: ƯU TIÊN GAMING (Yêu cầu Ping thấp, Không giật lag)
 *Mục tiêu: Giảm thiểu tối đa độ trễ tín hiệu, giúp các pha combo trong game không bị delay.*
