@@ -10,6 +10,7 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 
 ### 1. Phân giải DNS Qua Proxy (Resolve DNS via Proxy)
 > Một số app sẽ không có tùy chọn này
+
 * **Giải thích bình dân:** Bình thường khi bạn gõ `facebook.com`, điện thoại sẽ hỏi "nhà mạng Việt Nam" xem địa chỉ nhà Facebook ở đâu rồi mới đi. Việc này dễ bị nhà mạng chặn hoặc theo dõi. Khi bật tính năng này, điện thoại sẽ bỏ qua nhà mạng, đóng gói câu hỏi lại bảo mật rồi gửi sang máy chủ nước ngoài (VPS) nhờ hỏi hộ.
 * **Ưu điểm:** Vượt qua mọi tường lửa, chặn mạng của các nhà mạng tại Việt Nam một cách hoàn hảo. An toàn tuyệt đối.
 * **Nhược điểm:** Bạn phải tốn thêm một chút thời gian chờ máy chủ nước ngoài trả lời, nên lúc mới bấm vào trang web sẽ có cảm giác hơi "khựng" nhẹ khoảng 0.5 giây đầu.
@@ -27,6 +28,7 @@ Tài liệu này được viết ra để giải thích các tính năng phức 
 
 ### 5. Ghim Chứng Chỉ Máy Chủ (Pinned Peer Cert SHA256)
 > Các app sử dụng X-ray core cũ sẽ không có tùy chọn này
+
 * **Giải thích bình dân:** Đây là tính năng bảo mật cấp cao nhất. Bạn cấp cho ứng dụng một mã "Hộ chiếu độc quyền" của máy chủ thật. Khi bạn ra quán cafe kết nối Wifi công cộng, nếu có hacker xấu tính cố tình giả mạo địa chỉ máy chủ để ăn trộm mật khẩu của bạn, ứng dụng quét mã thấy không khớp sẽ **ngay lập tức cắt đứt kết nối** để bảo vệ bạn.
 
 ### 6. Ghép Kênh Dữ Liệu - MUX (Multiplexing)
