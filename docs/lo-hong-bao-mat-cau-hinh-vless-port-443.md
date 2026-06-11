@@ -43,7 +43,7 @@ Khi quan sát phân đoạn mã Hex và văn bản giải mã (ASCII) ở góc d
 * **Đích đến thực sự:** `Host: betltonexinhnhatna.appsfiyer.shop` – Tên miền của máy chủ Proxy riêng không hề được mã hóa. Hệ thống tường lửa (Firewall) hoặc DPI (Deep Packet Inspection) của nhà mạng có thể dễ dàng bắt bài rằng gói tin này không hề đi đến cụm máy chủ hợp pháp của TikTok, mà đang chuyển hướng đến một bên thứ ba.
 * **Thông tin thiết bị:** `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)...` tiết lộ chính xác hệ điều hành và trình duyệt của người dùng.
 
-<img width="1433" height="678" alt="image" src="https://github.com/user-attachments/assets/a6ee3890-1719-4a13-958f-1b1734a6dfa2" />
+<img alt="image" src="https://github.com/user-attachments/assets/a6ee3890-1719-4a13-958f-1b1734a6dfa2" />
 
 
 ```text
